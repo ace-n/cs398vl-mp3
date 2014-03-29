@@ -1,0 +1,25 @@
+<!-- You may have to launch Chrome with the --allow-file-access-from-files option -->
+<html>
+	<head>
+		<style type="text/css">
+		  #container {
+		    max-width: 100%;
+		    height: 100%;
+		    margin: auto;
+		  }
+		</style>
+	</head>
+	<body>
+		<div id="container"></div>
+			<script src="./sigma-js/sigma.min.js"></script>
+			<script src="./sigma-js/sigma.parsers.json.min.js"></script>
+			<script>
+			  sigma.parsers.json('./data.json', {
+			    container: 'container',
+			    settings: {
+			      defaultNodeColor: '#ec5148'
+			    }
+			  });
+			</script>
+	</body>
+</html>
